@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  --headingColor: #1c1e21;
+  --textColor: #606770;
+  --buttonColor: #00a400;
+  --outlineColor: red;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--textColor);
+  font-size: 1.5rem;
+}
+
+input,
+select {
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+
+input {
+  background-color: #f5f6f7;
+}
+
+input:focus {
+  outline: 0.8px solid var(--outlineColor);
+}
+
+select:focus {
+  outline: 0.8px solid var(--outlineColor);
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+}
+
+.row.row-between {
+  justify-content: space-between;
+}
+
+.app {
+  inline-size: 100%;
+  block-size: 100%;
+}
+
+#main {
+  max-inline-size: 100%;
+  margin: 0 auto;
+  display: grid;
+  place-content: center;
+}
+
+form {
+  margin-top: 64px;
+  position: relative;
+  background-color: #fff;
+  max-inline-size: 432px;
+}
+
+input {
+  font-size: 1.5rem;
+}
+
+form {
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.form__head {
+  padding: 10px 16px;
+  border-bottom: 1px solid #ccc;
+}
+
+form h1 {
+  color: var(--headingColor);
+  font-size: 3.2rem;
+}
+
+.form__content {
+  padding: 16px;
+}
+
+.form__content__inf input {
+  padding: 12px;
+}
+
+.form__content__inf > input {
+  margin-bottom: 10px;
+  inline-size: 100%;
+}
+
+.inf__name input {
+  max-inline-size: 194px;
+  display: inline-block;
+}
+
+.inf__general__item {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.inf__general input {
+  outline: none !important;
+}
+
+.inf__birthday {
+  margin-bottom: 12px;
+}
+
+label span {
+  margin-bottom: 6px;
+  display: inline-block;
+}
+
+select {
+  font-size: 1.5rem;
+  padding: 12px 0;
+  inline-size: 125px;
+}
+
+.inf__general__item span {
+  padding-right: 40px;
+}
+
+.inf__subname select {
+  inline-size: 100%;
+  padding: 12px;
+  margin-top: 12px;
+}
+
+.inf__generalopinal input {
+  padding: 12px;
+  inline-size: 100%;
+}
+
+.form__content > span {
+  padding: 12px 0;
+  display: inline-block;
+}
+
+.form__foot {
+  padding: 0 16px;
+  padding-bottom: 24px;
+}
+
+.foot__item {
+  margin-bottom: 16px;
+}
+
+.foot__item span {
+  text-align: justify;
+}
+
+.form__foot a {
+  text-decoration: none;
+  color: rgb(83, 83, 237);
+}
+
+.form__foot button {
+  background-color: var(--buttonColor);
+  padding: 8px 50px;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 1.7rem;
+  font-weight: 600;
+  display: block;
+  margin: 0 auto;
+  transition: background-color ease 0.4s 0.4s;
+}
+
+.form__foot button:hover {
+  background: linear-gradient(#79bc64, #578843);
+}
+
+.form__close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.form__close i {
+  font-size: 24px;
+}
